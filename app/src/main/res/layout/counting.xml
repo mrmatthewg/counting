@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:id="@+id/relativeLayout">
+
+    <Button
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:text="@string/answer1"
+        android:id="@+id/button1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="35dp" />
+    <Button
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:text="@string/answer2"
+        android:id="@+id/button2"
+        android:layout_below="@+id/button1"
+        android:layout_alignLeft="@+id/button1" />
+    <Button
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:text="@string/answer3"
+        android:id="@+id/button3"
+        android:layout_below="@+id/button2"
+        android:layout_toRightOf="@+id/imageView" />
+    <Button
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:text="@string/answer4"
+        android:id="@+id/button4"
+        android:layout_below="@+id/button3"
+        android:layout_toRightOf="@+id/imageView" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/cars4"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/button1" />
+
+</RelativeLayout>
